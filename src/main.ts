@@ -1,6 +1,13 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter, Routes } from '@angular/router';
 
-bootstrapApplication(AppComponent, appConfig)
+import { AppComponent } from './app/app.component';
+import { ListMovieComponent } from './app/list-movie/list-movie.component';
+
+const routes: Routes = [
+  { path: 'movies/:id', component: ListMovieComponent }
+];
+
+bootstrapApplication(AppComponent, {providers: [provideHttpClient(), provideRouter(routes)]})
   .catch((err) => console.error(err));

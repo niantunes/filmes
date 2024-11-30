@@ -1,0 +1,7 @@
+<nav class="menu">
+  <ul>
+    <li *ngFor="let genre of genres">
+      <a (click)="onGenreClick(genre.id)">{{genre.name}}</a>
+    </li>
+  </ul>
+</nav>

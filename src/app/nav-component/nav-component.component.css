@@ -1,17 +1,4 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-  }
-  
-  .layout {
-    display: flex;
-    height: 100vh;
-  }
-  
   .menu {
-    width: 20%;
     background-color: #333;
     color: white;
     padding: 15px;
@@ -34,12 +21,5 @@ body, html {
   
   .menu a:hover {
     text-decoration: underline;
-  }
-  
-  .content {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
   }
   
